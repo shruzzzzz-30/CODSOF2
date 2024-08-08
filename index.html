@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container ">
+                <h1>Shruti</h1>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to My Portfolio</h2>
+            <p>I am a Web Developer with a passion for creating beautiful and functional websites.</p>
+            <a href="#portfolio" class="cta-button">Check Out My Works</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <img src="pic.jpg" alt="Shruti" class="profile-img">
+                <div class="bio">
+                    <h2>About Me</h2>
+                    <p>Hello! I'm Shruti, a passionate web developer with a knack for creating dynamic and user-friendly websites. With a background in Computer Science, I have honed my skills in various front-end technologies and enjoy bringing creative ideas to life.</p>
+                    <p>Over the years, I have worked on diverse projects ranging from e-commerce sites, personal blogs, and interactive web applications. My expertise includes HTML, CSS, JavaScript, and frameworks like Node.js, React, and Vue.js.</p>
+                    <p>When I'm not coding, you'll find me exploring new technologies, hiking in nature, or working on my photography skills. I'm always eager to learn and take on new challenges to grow both personally and professionally.</p>
+                    <p>Feel free to connect with me to discuss potential projects or just to chat about tech!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skill-item">
+                <h3>HTML & CSS</h3>
+                <p>Experienced in building responsive, accessible websites.</p>
+            </div>
+            <div class="skill-item">
+                <h3>JavaScript</h3>
+                <p>Skilled in creating interactive and dynamic web applications.</p>
+            </div>
+            <div class="skill-item">
+                <h3>React</h3>
+                <p>Proficient in building single-page applications with React.</p>
+            </div>
+            <div class="skill-item">
+                <h3>Node.js</h3>
+                <p>Experienced in building server-side applications with Node.js.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+           
+            <h2>My Projects</h2>
+            <div class="grid">
+
+                <div class="portfolio-item">
+                    <img src="port.png" alt="Project 1">
+                    <div class="overlay">
+                        <h3>1.Job Portal Website</h3>
+                        <div class="overlay-content">
+                            <p>The Job Portal is a modern, full-stack application designed to connect job seekers with
+                                employers. Developed using the MERN stack, this project leverages MongoDB, Express.js,
+                                React, and Node.js to provide a dynamic and scalable platform for job listings,
+                                applications, and user management.</p>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="portfolio-item">
+                    <img src="blogg.jpg" alt="Project 2">
+
+                    <div class="overlay">
+                        <h3>2.Blogging</h3>
+                        <div class="overlay-content">
+                            <p>Responsive Blog site project is developed using PHP, CSS, and JavaScript. Talking about
+                                the project, it has lots of features. A user can post blogs under the different
+                                category, add editors choice, links and view admin stats. This project is a complete
+                                blogging site for the users where different categories are divided for the users. It
+                                contains a homepage from where users can check the latest blogs. The viewer is allowed
+                                to comment through their Facebook accounts.</p>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="portfolio-item">
+                    <img src="help.jpg" alt="Project 3">
+                    <div class="overlay"> 
+                        <h3>3.Psychological Help </h3>
+                        <div class="overlay-content">
+                            <p> Psychological Alarm is your digital companion for managing mental well-being, offering
+                                tools and resources to help track stress levels, practice relaxation techniques, and
+                                access timely support.
+
+                                Our website provides a range of features designed to enhance mental health, including
+                                daily affirmations, stress monitoring, and guided meditations, all aimed at fostering a
+                                healthier mindset.
+
+                                With Psychological Alarm, you can easily stay on top of your mental health through
+                                interactive tools, professional resources, and emergency support options, ensuring you
+                                have the assistance you need when you need it.</p>
+                        </div>
+                    </div>
+                </div><br>
+                <section id="resume" class="resume">
+                    <div class="container">
+                        <h2>Resume</h2>
+                        <p>Download my resume to learn more about my professional background and experience.</p>
+                        <a href="resume.pdf" class="cta-button" download>Download Resume</a>
+                    </div>
+                </section>
+                
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your Email ID" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container ">
+
+            <div className="flex space-x-4 mt-4 md:mt-0 ">
+                <a href="https://facebook.com" className="hover:text-white-200" aria-label="Facebook">
+                    <svg className="w-3 h-3" fill="white"> Facebook
+                        <path
+                            d="M22.676 0H1.324C.593 0 0 .592 0 1.324v21.352C0 23.408.593 24 1.324 24H12.82V14.706H9.692v-3.578h3.128V8.408c0-3.1 1.893-4.787 4.657-4.787 1.325 0 2.463.1 2.794.144v3.238l-1.918.001c-1.503 0-1.794.715-1.794 1.762v2.31h3.587l-.468 3.578h-3.119V24h6.116C23.407 24 24 23.408 24 22.676V1.324C24 .592 23.407 0 22.676 0z" />
+                    </svg>
+                </a>
+                <a href="https://twitter.com" className="hover:text-white-200" aria-label="Twitter">
+                    <svg className="w-3 h-3" fill="white"> Twitter
+                        <path
+                            d="M24 4.557a9.835 9.835 0 01-2.828.775 4.934 4.934 0 002.165-2.724 9.867 9.867 0 01-3.127 1.195 4.924 4.924 0 00-8.38 4.49A13.978 13.978 0 011.67 3.149 4.93 4.93 0 003.16 9.724a4.903 4.903 0 01-2.229-.616v.062a4.93 4.93 0 003.946 4.827 4.902 4.902 0 01-2.224.084 4.93 4.93 0 004.6 3.417A9.869 9.869 0 010 21.543a13.978 13.978 0 007.548 2.212c9.057 0 14.01-7.507 14.01-14.01 0-.213-.004-.425-.015-.636A10.012 10.012 0 0024 4.557z" />
+                    </svg>
+                </a>
+
+                <a href="https://linkedin.com" className="hover:text-white-200" aria-label="LinkedIn">
+                    <svg className="w-3 h-3" fill="white">
+                        <path
+                            d="M20.447 20.452H16.85v-5.569c0-1.327-.027-3.037-1.852-3.037-1.854 0-2.137 1.446-2.137 2.94v5.666H9.147V9.756h3.448v1.464h.05c.48-.91 1.653-1.871 3.401-1.871 3.634 0 4.307 2.39 4.307 5.498v5.605zM5.337 8.29c-1.105 0-2-.896-2-2 0-1.106.895-2 2-2 1.104 0 2 .895 2 2 0 1.104-.896 2-2 2zM7.119 20.452H3.553V9.756h3.566v10.696zM22.225 0H1.771C.791 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451c.979 0 1.771-.774 1.771-1.729V1.729C24 .774 23.205 0 22.225 0z" />
+                    </svg>
+                </a>
+                <p>&copy; 2024 Shruti. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html> 
